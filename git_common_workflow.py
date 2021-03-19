@@ -17,9 +17,9 @@ def current_branch_name():
     return branch_merge_name
 
 if ch == 1:
-    branch_name = input('Enter the branch name: ', end = '')
+    branch_name = input('Enter the branch name: ')
     os.system(f'git branch {branch_name}')
-    switch = input('Do you want to switch to newly created branch: "y/n" ', end = '')
+    switch = input('Do you want to switch to newly created branch: "y/n" ')
     if switch == 'y' or switch == 'Y':
         os.system(f'git checkout {branch_name}')
     print('You are working at: ', end = '')
@@ -27,13 +27,13 @@ if ch == 1:
 
 elif ch == 2:
     os.system('git branch')
-    where_to_work = input('Type the branch from available list above: ', end = '')
+    where_to_work = str(input('Type the branch from available list above: '))
     os.system(f'git checkout {where_to_work}')
 
 elif ch == 3:
     print('You are working at: ', end = '')
     os.system('git branch --show-current')
-    push = input('Confirm to push into remote: "y/n"', end = '')
+    push = input('Confirm to push into remote: "y/n"')
     if push == 'y' or push == 'Y':
         os.system('git status')
         os.system('git add -A')
@@ -50,7 +50,7 @@ elif ch == 4:
 
     branch_merge_name = current_branch_name()
 
-    finish = input('Finish the branch process: "y/n"', end = '')
+    finish = input('Finish the branch process: "y/n"')
     if finish == 'y' or finish == 'Y':
         os.system('git checkout main')
         os.system('git pull origin main')
