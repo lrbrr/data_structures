@@ -129,4 +129,4 @@ dmypy.json
 .pyre/
 
 # files
-./git_common_workflow.py
+git_common_workflow.py
