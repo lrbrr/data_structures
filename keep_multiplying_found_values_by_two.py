@@ -16,5 +16,7 @@ class Solution2:
 print(Solution().findFinalValue([5, 3, 6, 1, 12], 3)) # 24
 print(Solution().findFinalValue([2, 7, 9], 4)) # 4
 
+print(' - ' * 50)
+
 print(Solution2().findFinalValue([5, 3, 6, 1, 12], 3)) # 24
 print(Solution2().findFinalValue([2, 7, 9], 4)) # 4
