@@ -10,7 +10,7 @@ class ListNode:
         return f'{self.val} -> {self.next}'
 
 class Solution:
-    def create_num(self, linkl: Optional[ListNode]):
+    def create_num(self, linkl: Optional[ListNode]) -> int:
         out = []
         while linkl.next:
             out.append(linkl.val)
@@ -33,5 +33,10 @@ class Solution:
 
         return self.create_ll(reversed_list)
 
-print(Solution().addTwoNumbers(ListNode(2, ListNode(4, ListNode(3))), ListNode(5, ListNode(6, ListNode(4)))))
-print(Solution().addTwoNumbers(ListNode(0), ListNode(0)))
+n1 = ListNode(2, ListNode(4, ListNode(3)))
+n2 = ListNode(5, ListNode(6, ListNode(4)))
+print(Solution().addTwoNumbers(n1, n2)) # 7 -> 0 -> 8 -> None
+
+n1 = ListNode(0)
+n2 = ListNode(0)
+print(Solution().addTwoNumbers(n1, n2)) # 0 -> None
