@@ -35,16 +35,16 @@ class Solution2:
         nums1[:] = sorted(nums1[:m] + nums2[:n])
         print(nums1)
 
-Solution().merge([1,2,3,0,0,0], 3, [2,5,6], 3)
-Solution().merge([1], 1, [], 0)
-Solution().merge([0], 0, [1], 1)
-Solution().merge([1, 0], 1, [2], 1)
-Solution().merge([2, 0], 1, [1], 1)
+Solution().merge([1,2,3,0,0,0], 3, [2,5,6], 3) # [1,2,2,3,5,6]
+Solution().merge([1], 1, [], 0) # [1]
+Solution().merge([0], 0, [1], 1) # [1]
+Solution().merge([1, 0], 1, [2], 1) # [1,2]
+Solution().merge([2, 0], 1, [1], 1) # [1,2]
 
 print(' - ' * 50)
 
-Solution2().merge([1,2,3,0,0,0], 3, [2,5,6], 3)
-Solution2().merge([1], 1, [], 0)
-Solution2().merge([0], 0, [1], 1)
-Solution2().merge([1, 0], 1, [2], 1)
-Solution2().merge([2, 0], 1, [1], 1)
+Solution2().merge([1,2,3,0,0,0], 3, [2,5,6], 3) # [1,2,2,3,5,6]
+Solution2().merge([1], 1, [], 0) # [1]
+Solution2().merge([0], 0, [1], 1) # [1]
+Solution2().merge([1, 0], 1, [2], 1) # [1,2]
+Solution2().merge([2, 0], 1, [1], 1) # [1,2]
