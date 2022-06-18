@@ -6,7 +6,7 @@ for number in given_numbers:
     if number < 0:
         total_for += number
 
-print(total_for)
+print(total_for) # -26
 
 # using while loop
 total_while = 0
@@ -16,4 +16,4 @@ while i < len(given_numbers):
         total_while += given_numbers[i]
     i += 1
 
-print(total_while)
+print(total_while) # -26
