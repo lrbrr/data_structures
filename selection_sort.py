@@ -9,9 +9,9 @@ def selection_sort(arr: List[int], n: int) -> List[int]:
 
         # swap the smallest from its position to starting position
         temp = arr[i]
-        idx_smallest = arr.index(smallest)
+        idx_smallest = arr[i:].index(smallest)
         arr[i] = smallest
-        arr[idx_smallest] = temp
+        arr[idx_smallest+i] = temp
 
     return arr
 
