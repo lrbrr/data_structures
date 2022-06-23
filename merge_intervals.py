@@ -13,3 +13,7 @@ class Solution:
         return merged
 
 print(Solution().merge([[1,3],[2,6],[8,10],[15,18]])) # [[1, 6], [8, 10], [15, 18]]
+print(Solution().merge([[1,4],[4,5]])) # [[1, 5]]
+print(Solution().merge([[1,4],[2,3]])) # [[1, 4]]
+print(Solution().merge([[1,4],[2,6],[3,5]])) # [[1, 6]]
+print(Solution().merge([[1,4],[2,6],[3,5],[7,9]])) # [[1, 6], [7, 9]]
